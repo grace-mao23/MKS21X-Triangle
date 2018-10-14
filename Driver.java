@@ -1,7 +1,8 @@
 public class Driver{
-  public void main(String[]args){
+  public static void main(String[]args){
     Point a = new Point(1.0, 1.0);
     Point b = new Point(2.0, 2.0);
+    Point c = new Point(0.0, 0.0);
 
     System.out.println("a: (" + a.getX() + ", " + a.getY() + ")");
 
@@ -9,8 +10,6 @@ public class Driver{
 
     System.out.println("a: " + a);
     System.out.println("b: " + b);
-    System.out.println("c: " + c);
-    System.out.println("d: " + d);
 
     System.out.println();
 
@@ -28,23 +27,18 @@ public class Driver{
     System.out.println( t2 );
     System.out.println( t2.getPerimeter() );
 
-    System.out.println("Testing a 3/4/5 triangle");
-    t1 = new Triangle(-1,-1, 2,3, 2,-1);
-    System.out.println( t1 );
-    System.out.println( t1.getPerimeter() );
-
     System.out.println();
 
     System.out.println("Testing vertex, getting each");
-    System.out.println("Vertex A: " + t1.getVertex(0));
-    System.out.println("Vertex B: " + t1.getVertex(1));
-    System.out.println("Vertex C: " + t1.getVertex(2));
+    System.out.println("Vertex A: " + t2.getVertex(0));
+    System.out.println("Vertex B: " + t2.getVertex(1));
+    System.out.println("Vertex C: " + t2.getVertex(2));
 
     System.out.println();
 
     System.out.println("Testing setVertex");
-    t1.setVertex(0.0, 0.0);
-    System.out.println( t1 );
+    t2.setVertex(0, c);
+    System.out.println( t2 );
 
   }
  }

@@ -31,11 +31,11 @@ public class Triangle{
 
   public void setVertex(int index, Point newP){
     if (index == 0) {
-      return new Point(newP);
+      v1 = new Point(newP);
     } else if (index == 1) {
-      return new Point(newP);
+      v2 = new Point(newP);
     } else {
-      return new Point(newP);
+      v3 = new Point(newP);
     }
   }
 
